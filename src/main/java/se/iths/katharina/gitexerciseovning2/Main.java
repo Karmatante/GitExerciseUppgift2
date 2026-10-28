@@ -6,6 +6,8 @@ public class Main {
     static void main() {
 
         IO.println(maxA(4, 9));
+        IO.println(roundA(45.4523));
+        IO.println(parseIntA("42") + 8);
 
     }
 
@@ -18,4 +20,14 @@ public class Main {
         return Math.max(a,b);
     }
 
+    public static double roundA(double number) {
+        long roundedNumber = Math.round(number);
+        return roundedNumber;
+    }
+
+    public static int parseIntA(String textNumber) {
+        int number = Integer.parseInt(textNumber);
+        return number;
+
+    }
 }
